@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Sprout & Grow</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5dc;
+            color: #333;
+        }
+
+        header, footer {
+            background-color: #b7e1a1;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #333;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .event-details {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .event-details h3 {
+            margin-top: 0;
+        }
+
+        .event-details p {
+            line-height: 1.6;
+        }
+
+        .signup-form {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        form input, form textarea, form select, form button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #b7e1a1;
+            color: #333;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer .social-images img {
+            width: 40px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="https://images.pexels.com/photos/6913437/pexels-photo-6913437.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Sprout & Grow Logo">
+    <h1>Sprout & Grow</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="button-link">Home</a></li>
+            <li><a href="about.html" class="button-link">About Us</a></li>
+            <li><a href="products.html" class="button-link">products</a></li>
+            <li><a href="Events.html" class="button-link">Events</a></li>
+            <li><a href="Register.html" class="button-link">Register</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h1>Upcoming Events</h1>
+        <div class="event-details">
+            <h2>Gardening Workshop</h2>
+            <p>Learn the basics of sustainable gardening in this hands-on workshop. Our experts will guide you through soil preparation, planting techniques, and more!</p>
+            <p><strong>Date:</strong> December 10, 2024</p>
+            <p><strong>Time:</strong> 10:00 AM - 2:00 PM</p>
+            <p><strong>Location:</strong> Sprout & Grow Greenhouse, Raleigh, NC</p>
+        </div>
+
+        <div class="event-details">
+            <h2>Greenhouse Tour</h2>
+            <p>Take a guided tour of our beautiful greenhouse and discover the secrets behind growing organic plants. Perfect for nature lovers!</p>
+            <p><strong>Date:</strong> December 17, 2024</p>
+            <p><strong>Time:</strong> 1:00 PM - 3:00 PM</p>
+            <p><strong>Location:</strong> Sprout & Grow Greenhouse, Raleigh, NC</p>
+        </div>
+    </section>
+
+    <section class="signup-form">
+        <h2>Register for an Event</h2>
+        <form action="submit.html" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="events">Select Event:</label>
+            <select id="events" name="events">
+                <option value="workshop">Gardening Workshop</option>
+                <option value="tour">Greenhouse Tour</option>
+            </select>
+
+            <label for="preferences">Additional Preferences:</label>
+            <textarea id="preferences" name="preferences" placeholder="Let us know any special requirements or interests"></textarea>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-banner">
+        <p>Connect with us:</p>
+        <div class="social-images">
+            <img src="https://images.pexels.com/photos/267399/pexels-photo-267399.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Facebook logo">
+            <img src="https://images.pexels.com/photos/19826630/pexels-photo-19826630/free-photo-of-smartphone-with-social-media-icon-on-desk.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Twitter logo">
+        </div>
+        <a href="https://www.gardeningwebsite.com" target="_blank">Learn more about sustainable gardening</a>
+        <p>&copy; 2024 Sprout & Grow. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
